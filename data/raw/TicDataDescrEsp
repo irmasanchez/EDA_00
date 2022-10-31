@@ -1,0 +1,336 @@
+DATOS DETALLADOS DESCRIPCIÓN
+
+LA COMPAÑÍA DE SEGUROS (TIC) 2000
+
+(c) Investigación de máquinas sensibles 2000
+
+DESCARGO DE RESPONSABILIDAD
+
+Este conjunto de datos es propiedad de la empresa holandesa de minería de datos Sentient Machine Research y lo proporciona, y se basa en datos comerciales del mundo real. Se le permite utilizar este conjunto de datos y la información que lo acompaña únicamente con fines educativos y de investigación no comercial. Está explícitamente prohibido utilizar este conjunto de datos con fines de demostración o educación comercial. Para cualquier otro uso, póngase en contacto con Peter van der Putten, info@smr.nl.
+
+Este conjunto de datos se ha utilizado en la competencia de minería de datos CoIL Challenge 2000. Para documentos que describen los resultados de este conjunto de datos, consulte la página de inicio de TIC 2000: http://www.wi.leidenuniv.nl/~putten/library/cc2000/
+
+REFERENCIA
+
+P. van der Putten y M. van Someren (eds). CoIL Challenge 2000: El caso de la compañía de seguros.
+Publicado por Sentient Machine Research, Ámsterdam. También un informe técnico 2000-09 del Instituto Leiden de Ciencias Informáticas Avanzadas. 22 de junio de 2000.
+
+ARCHIVOS RELEVANTES
+
+TICDATA2000.txt:
+Conjunto de datos para entrenar y validar modelos de predicción y construir una descripción (5822 registros de clientes). Cada registro consta de 86 atributos, que contienen datos sociodemográficos (atributo 1-43) y propiedad del producto (atributos 44-86). Los datos sociodemográficos se derivan de los códigos postales. Todos los clientes que viven en áreas con el mismo código postal tienen los mismos atributos sociodemográficos. El atributo 86, "CARAVAN:Número de pólizas de casas móviles", es la variable objetivo.
+
+TICEVAL2000.txt:
+Conjunto de datos para predicciones (4000 registros de clientes). Tiene el mismo formato que TICDATA2000.txt, solo falta el objetivo. Se supone que los participantes deben devolver solo la lista de objetivos previstos. Todos los conjuntos de datos están en formato delimitado por tabulaciones.
+El significado de los atributos y los valores de los atributos se indica a continuación.
+
+TICTGTS2000.txt
+Objetivos para el conjunto de evaluación.
+
+DICCIONARIO DE DATOS
+
+Nr Nombre Descripción Dominio
+
+1 MOSTYPE Subtipo de cliente  ver L0
+
+2 MAANTHUI Número de casas 1 10
+
+3 MGEMOMV Tamaño promedio del hogar 1 6
+
+4 MGEMLEEF Edad promedio ver L1
+
+5 MOSHOOFD Cliente tipo principal ver L2
+
+6 MGODRK católica romana ver L3
+
+7 MGODPR protestante...
+
+8 MGODOV Otra religión
+
+9 MGODGE Sin religión
+
+10 MRELGE Casado
+
+11 MRELSA Convivencia
+
+12 MRELOV Otra relación
+
+13 MFALLEEN solteros
+
+14 MFGEKIND Hogar sin hijos
+
+15 MFWEKIND Hogar con hijos
+
+16 MOPLHOOG Educación de alto nivel
+
+17 MOPLMIDD Educación de nivel medio
+
+18 MOPLLAAG Educación de nivel inferior
+
+19 MBERHOOG Estado alto
+
+20 MBERZELF Emprendedor
+
+21 MBERBOER Agricultor
+
+22 MBERMIDD Mandos intermedios
+
+23 MBERARBG Trabajadores calificadosnorte
+
+24 MBERARBO Trabajadores no calificados
+
+25 MSKA Clase social A
+
+26 MSKB1 Clase social B1
+
+27 MSKB2 Clase social B2
+
+28 MSKC Clase social C
+
+29 MSKD Clase social D
+
+30 MHHUUR Casa alquilada
+
+31 MHKOOP Propietarios de viviendas
+
+32 MAUT1 1 coche
+
+33 MAUT2 2 coches
+
+34 MAUT0 Sin coche
+
+35 MZFONDS Servicio Nacional de Salud
+
+36 MZPART Seguro médico privado
+
+37 MINKM30 Renta < 30.000
+
+38 MINK3045 Renta 30-45.000
+
+39 MINK4575 Renta 45-75.000
+
+40 MINK7512 Renta 75-122.000
+
+41 MINK123M Renta >123.000
+
+42 MINKGEM Ingreso promedio
+
+43 MKOOPKLA Clase de poder adquisitivo
+
+44 PWAPART Contribución seguro privado a terceros ver L4
+
+45 PWABEDR Contribución seguro a terceros (empresas) ...
+
+46 PWALAND Contribución seguro de terceros (agricultura)
+
+47 PPERSAUT Pólizas de automóvil de contribución
+
+48 Pólizas de furgoneta de reparto de contribuciones de PBESAUT
+
+49 Pólizas PMOTSCO Contribución motocicleta/scooter
+
+50 PVRAAUT Contribución pólizas camión
+
+51 PAANHANG Políticas de tráiler de contribuciones
+
+52 PTRACTOR Pólizas de tractor de contribución
+
+53 PWERKT Contribución pólizas máquinas agrícolas
+
+54 Pólizas de ciclomotor de contribución PBROM
+
+55 PLEVEN Seguros de vida de cotización
+
+56 PPERSONG Pólizas de seguro privado de accidentes de contribución
+
+57 Pólizas de seguro de accidentes familiares de contribución PGEZONG
+
+58 PWAOREG Pólizas de seguro de invalidez con aporte
+
+59 PBRAND Contribución pólizas contra incendios
+
+60 PZEILPL Contribución políticas de tablas de surf
+
+61 PPLEZIER Contribución pólizas de embarcaciones
+
+62 PFIETS Pólizas de bicicletas de contribución
+
+63 Pólizas de seguro de propiedad de contribución PINBOED
+
+64 PBYSTAND Pólizas de seguro de seguridad social de cotización
+
+65 AWAPART Número de seguro privado a terceros 1 - 12
+
+66 AWABEDR Número de seguros a terceros (empresas) ...
+
+67 AWALAND Número de asegurado a terceros (agricultura)
+
+68 APERSAUT Número de pólizas de automóvil
+
+69 ABESAUT Número de pólizas de furgonetas de reparto
+
+70 AMOTSCO Número de pólizas de motocicleta/scooter
+
+71 AVRAAUT Número de pólizas de camión
+
+72 AAANHANG Número de pólizas de remolque
+
+73 ATRACTOR Número de pólizas de tractor
+
+74 AWERKT Número de pólizas de máquinas agrícolas
+
+75 ABROM Número de pólizas de ciclomotores
+
+76 ALEVEN Número de seguros de vida
+
+77 APERSONG Número de pólizas de seguro privado de accidentes
+
+78 AGEZONG Número de pólizas de seguro de accidentes familiares
+
+79 AWAOREG Número de pólizas de seguro de invalidez
+
+80 ABRAND Número de pólizas de incendio
+
+81 AZEILPL Número de pólizas de tablas de surf
+
+82 APLEZIER Número de pólizas de embarcaciones
+
+83 AFIETS Número de pólizas de bicicletas
+
+84 AINBOED Número de pólizas de seguro de propiedad
+
+85 ABYSTAND Número de pólizas de seguros de seguridad social
+
+86 CARAVAN Número de pólizas de casas móviles 0 - 1
+
+L0:
+Etiqueta de valor
+1 1 Renta alta, niño caro
+2 2 Provinciales muy importantes
+3 3 Mayores de alto estatus
+4 4 apartamentos para personas mayores acomodadas
+5 5 Mayores mixtos
+6 6 Carrera y cuidado de niños
+7 7 Dinki's (doble ingreso sin hijos)
+8 8 Familias de clase media
+9 9 Familias modernas y completas
+10 10 Familia estable
+11 11 Iniciadores familiares
+12 12 Familias jóvenes acomodadas
+13 13 jóvenes toda la familia americana
+14 14 Junior cosmopolita
+15 15 Mayores cosmopolitas
+16 16 Estudiantes en apartamentos
+17 17 Maestros frescos en la ciudad
+18 18 Joven soltero
+19 19 Juventud suburbana
+20 20 Étnicamente diverso
+21 21 Jóvenes pobres urbanos
+22 22 Habitantes de apartamentos mixtos
+23 23 Jóvenes y en ascenso
+24 24 Jóvenes, bajo nivel educativo
+25 25 Jóvenes mayores en la ciudad
+26 26 Mayores en domicilio propio
+27 27 Mayores en apartamentos
+28 28 Mayores residenciales
+29 29 Personas mayores sin porche: sin patio delantero
+30 30 Solteros mayores religiosos
+31 31 Católicos de bajos ingresos
+32 32 Mayores mixtos
+33 33 Familias numerosas de clase baja
+34 34 Familia numerosa, hijo trabajador
+35 35 Familias del pueblo
+36 36 Parejas con adolescentes 'Casados ​​con hijos'
+37 37 Habitantes mixtos de ciudades pequeñas
+38 38 Familias tradicionales
+39 39 Familias religiosas numerosas
+40 40 Grandes explotaciones familiares
+41 41 Rural mixto
+
+L1:
+
+1 20-30 años
+
+2 30-40 años
+
+3 40-50 años
+
+4 50-60 años
+
+5 60-70 años
+
+6 70-80 años
+
+
+
+L2:
+
+1 hedonistas exitosos
+
+2 cultivadores motivados
+
+3 Familia Promedio
+
+4 profesionales solitarios
+
+5 Vivir bien
+
+6 personas mayores de crucero
+
+7 jubilados y religiosos
+
+8 Familia con adultos
+
+9 familias conservadoras
+
+10 granjeros
+
+ 
+
+L3:
+
+0 0%
+
+1 1 - 10%
+
+2 11 - 23%
+
+3 24 - 36%
+
+4 37 - 49%
+
+5 50 - 62%
+
+6 63 - 75%
+
+7 76 - 88%
+
+8 89 - 99%
+
+9 100%
+
+ 
+
+L4:
+
+0 en 0
+
+1 f 1 49
+
+2 f 50 99
+
+3 f 100 199
+
+4 de 200 499
+
+5 de 500 999
+
+6 de 1000 4999
+
+7 f 5000 9999
+
+8 $ 10.000 - 19.999
+
+9f 20.000 - ?
+
+
